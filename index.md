@@ -1,8 +1,8 @@
-<style>
+<head>
 
-h1{color:#999;}
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
-</style>
+</head>
 
 <h1>Headline</h1>
 
