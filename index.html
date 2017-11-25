@@ -15,7 +15,7 @@
 <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/styles.css">
-<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -23,13 +23,9 @@
 
 <body>
 <nav>
-<ul>
-	<li><a href="/newpage">About</a></li>
-	<li><a href="#">Services</a></li>
-	<li><a href="#">Work</a></li>
-</ul>
-<div class="button">
-	<a class="btn-open" href="#"></a>
+
+<div class="menuButton">
+	<a class="btn-open" href="#/"></a>
 </div>
 </nav>
 <div class="overlay">
@@ -47,13 +43,29 @@
 		
 	</div>
 </div>
+<script>
+    $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 500) {
+        $(".menuButton").addClass("menuClear");
+         $(".btn-open").addClass("btn-openScroll");
+    } else {
+        $(".menuButton").removeClass("menuClear");
+        $(".btn-open").removeClass("btn-openScroll");
+    }
+});
+    </script>
+    
+ 
+<div style="background:#55aa85;height:400px;"></div>    
 <div class="content">
 	 Click on hamburger to open the overlay menu
 </div>
-   
+  <div style="height:2000px;"></div> 
  <script>
 $(document).ready(function(){
-    $(".button a").click(function(){
+    $(".menuButton a").click(function(){
         $(".overlay").fadeToggle(200);
        $(this).toggleClass('btn-open').toggleClass('btn-close');
     });
@@ -64,6 +76,6 @@ $('.overlay').on('click', function(){
     open = false;
 });
 </script> 
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 </body>
 </html>

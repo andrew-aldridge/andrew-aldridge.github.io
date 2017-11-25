@@ -53,7 +53,7 @@ body {
 	padding:0;
 	background:#fff;
 	font-family:'Montserrat',sans-serif;
-	font-size:12px;
+	font-size:14px;
 }
 ul {
 	margin:0;
@@ -95,19 +95,30 @@ nav ul li a:hover {
 	color: #34B484;
 }
 /*styling open close button*/
-.button {
+.menuButton {
 	display:inline;
 	position:absolute;
-	right:50px;
-	top:6px;
+	right:15px;
+	top:15px;
 	z-index:999;
-	font-size:30px;
+	font-size:25px;
+    background:#000;
+    position:fixed;
+    border-radius: 50%;
+    height:40px;
+    width:40px;
+    line-height: 40px;
+        transition:0.7s;
 }
-.button a {
+.menuButton a {
 	text-decoration:none;
 }
+
+.menuClear{
+  background:none;  
+}
 .btn-open:after {
-	color:#333;
+	color:#fff;
 	content:"\f0c9";
 	font-family:"FontAwesome";
 	transition-property:all .2s linear 0s;
@@ -118,8 +129,23 @@ nav ul li a:hover {
 .btn-open:hover:after {
 	color:#34B484;
 }
+
+.btn-open:focus{
+    color:fff;
+}
+
+.btn-openScroll:after{
+    color:#000;
+	content:"\f0c9";
+	font-family:"FontAwesome";
+	transition-property:all .2s linear 0s;
+	-moz-transition:all .2s linear 0s;
+	-webkit-transition:all .2s linear 0s;
+	-o-transition:all .2s linear 0s;
+}
+
 .btn-close:after {
-	color:#fff;
+	color:#e5d76c!important;
 	content:"\f00d";
 	font-family:"FontAwesome";
 	transition-property:all .2s linear 0s;
@@ -130,6 +156,10 @@ nav ul li a:hover {
 .btn-close:hover:after {
 	color: #34B484;
 }
+
+
+
+
 /*overlay*/
 .overlay {
 	display:none;
@@ -137,7 +167,7 @@ nav ul li a:hover {
 	top:0;
 	height:100%;
 	width:100%;
-	background:#333;
+	background:#000;
 	overflow:auto;
 	z-index:99;
 }
