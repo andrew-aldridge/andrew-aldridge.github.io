@@ -48,12 +48,20 @@ table {
 }
 /*EO reset*/
 
+
+
 body {
 	margin:0;
 	padding:0;
 	background:#fff;
-	font-family:'Montserrat',sans-serif;
-	font-size:14px;
+	font-family:'Lato',sans-serif;
+	font-size:1.1em;
+    font-weight:400;
+}
+
+p{
+    color:#444;
+    line-height: 1.7em;
 }
 ul {
 	margin:0;
@@ -94,6 +102,17 @@ nav ul li a {
 nav ul li a:hover {
 	color: #34B484;
 }
+
+
+
+.container{
+    max-width:1000px;
+    margin:0 auto;
+    padding:40px 80px 40px 40px;
+    
+}
+
+
 /*styling open close button*/
 .menuButton {
 	display:inline;
@@ -102,7 +121,7 @@ nav ul li a:hover {
 	top:15px;
 	z-index:999;
 	font-size:25px;
-    background:#000;
+    background:#013243;
     position:fixed;
     border-radius: 50%;
     height:40px;
@@ -114,8 +133,10 @@ nav ul li a:hover {
 	text-decoration:none;
 }
 
+.menuButtonHide{display:none}
+
 .menuClear{
-  background:none;  
+  background:#fff;
 }
 .btn-open:after {
 	color:#fff;
@@ -135,7 +156,7 @@ nav ul li a:hover {
 }
 
 .btn-openScroll:after{
-    color:#000;
+    color:#013243;
 	content:"\f0c9";
 	font-family:"FontAwesome";
 	transition-property:all .2s linear 0s;
@@ -144,7 +165,7 @@ nav ul li a:hover {
 	-o-transition:all .2s linear 0s;
 }
 
-.btn-close:after {
+.btn-close {
 	color:#e5d76c!important;
 	content:"\f00d";
 	font-family:"FontAwesome";
@@ -161,36 +182,47 @@ nav ul li a:hover {
 
 
 /*overlay*/
+
+.overlayClose:after{
+    right:25px;
+	top:25px;
+	z-index:999;
+	font-size:25px;
+    position:absolute;
+    color:#e5d76c;
+	content:"\f00d";
+	font-family:"FontAwesome";}
+
 .overlay {
 	display:none;
 	position:fixed;
 	top:0;
 	height:100%;
 	width:100%;
-	background:#000;
+	background:#013243;
 	overflow:auto;
 	z-index:99;
 }
 .wrap {
-	color:#e9e9e9;
+	color:#F89406;
 	text-align:center;
 	max-width:90%;
 	margin:0 auto;
 }
 .wrap ul.wrap-nav {
-	border-bottom:1px solid #575757;
+    text-align:center;
 	text-transform:capitalize;
 	padding:150px 0px 100px;
 }
 .wrap ul.wrap-nav li {
-	font-size:20px;
-	display:inline-block;
+	font-size:30px;
+	font-weight:800;
 	vertical-align:top;
 	width:24%;
 	position:relative;
 }
 .wrap ul.wrap-nav li a {
-	color:#34B484;
+	color:#e9d460;
 	display:block;
 	padding:8px 0;
 	text-decoration:none;
@@ -256,7 +288,7 @@ nav ul li a:hover {
 	.wrap ul.wrap-nav>li {
 		width:100%;
 		padding:20px 0;
-		border-bottom:1px solid #575757;
+		
 	}
 	.wrap ul.wrap-nav {
 		padding:30px 0px 0px;
