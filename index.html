@@ -34,15 +34,7 @@
     .hpTitle h3{padding: 0px 0px 0px 0px;margin: 0;font-size:22px;font-weight:700;}
     .hpTitle span{font-size:12px;:0 0 10px 0;color:#888;}
 
-#leftColAA {float: left; width: 30px;  height:100%;display: table;vertical-align: middle;padding-top:30px;}
-#rightColAA {float: right; width: 30px;display:table;padding-top:30px;}
-#centerColAA {overflow: hidden; }
 
-#leftColAA  {color:#999;transition:all 0.5s;}
-#rightColAA {color:#999;transition:all 0.5s;}
-
-#leftColAA a:hover{color:#888;}
-#rightColAA a:hover{color:#888;}
 
     .insert{display:table-cell;vertical-align: middle;}    
   
@@ -59,29 +51,21 @@
     .lefta{
         
         height:100%;
-        background:#000;
-        width:50px;
         display:inline-block;
         z-index: 2;
         position: absolute;
-        opacity:0.7; 
-    
-          color:#fff;  
+        color:#fff;  
     }
     
         .right{
         
         height:100%;
-        background:#000;
-        width:50px;
         display:inline-block;
         z-index: 99;
         position: absolute;
         right:0; 
-        top:0;    
-        opacity:0.7;  
-        
-          color:#fff;  
+        top:0;          
+        color:#fff;  
     }
     
     .middle{width:100%;z-index: 1;}
@@ -109,9 +93,9 @@
         
         
         
-                 <p class="logo" style="color:#fff;font-size:0.85em; font-family: 'Open Sans', sans-serif; line-height:40px; margin:0;padding:0;display:inline;float:left;
+                 <p class="logo" style="color:#444;font-size:0.85em; font-family: 'Open Sans', sans-serif; line-height:40px; margin:0;padding:0;display:inline;float:left;
 
-                font-weight : 800;">ANDREW ALDRIDGE <span style="color:#1b4b66;">/</span> <span style="color:#93cae2;">DESIGNER</span></p> <div class="overlayClose" syle="color:#fff;"></div>
+                font-weight : 700;">ANDREW ALDRIDGE / DESIGNER</p> <div class="overlayClose" syle="color:#fff;"></div>
 		<ul class="wrap-nav">
 			
 			
@@ -163,13 +147,16 @@
         
     </div> <!-----EO container------------>
     
-    
+    <div style="height:30px;"></div>
     
     
     <div class="outer">
 <div class="lefta">
 <div style="display:table;height:100%;vertical-align:middle;">
-    <div style="display:table-cell;height:100%;vertical-align:middle;">   <i class="fa fa-chevron-left" aria-hidden="true"></i></div> 
+    <div style="display:table-cell;vertical-align:middle;height:100%;">   
+        <div style="background:#19B5FE;border-radius:50%;height:40px;width:40px;text-align:center;line-height:40px;margin:0 10px;padding:0 4px 0 0;"><a class="customPrevBtn"><i class="fa fa-chevron-left" aria-hidden="true"></i></a></div>
+        
+        </div> 
 </div>    
 </div>
 <div class="middle">
@@ -179,7 +166,7 @@
 
 <div class="TObox"> <div class="brandBC">
 <a href="http://www.hargrovescycles.co.uk/specialized-bikes">
-<img src="img/slideImg1.jpg"/>
+<img src="img/car.jpg"/>
 </a>
 </div>
 </div>
@@ -218,7 +205,9 @@
 <div class="right">
 <div style="display:table;height:100%;vertical-align:middle;">
     <div style="display:table-cell;height:100%;vertical-align:middle;text-align:center;">   
-        <i class="fa fa-chevron-right" aria-hidden="true"></i></div> 
+        <div style="background:#19B5FE;border-radius:50%;height:40px;width:40px;text-align:center;line-height:40px;margin:0 10px;padding:0 0 0 4px;"><a class="customNextBtn"><i class="fa fa-chevron-right" aria-hidden="true"></i></a></div>
+    
+    </div> 
 </div>      
 </div>    
     
@@ -270,14 +259,19 @@ $(document).ready(function() {
  
 </script>
     
+<style>
     
+    .footer{padding:20px 0;background:#fff;border-top:solid 1px #19B5FE;margin-top:50px;}
+    </style>    
+     <div class="container">    
+<div class="footer">
     
+    Some Footer Text
     
-    
-<div style="width:100%;background:#ccc;height:400px;"></div>
+</div>    
+    </div>   
 
-  <div style="height:2000px;"></div> 
-    <div id="two"></div>
+
 
     
     
