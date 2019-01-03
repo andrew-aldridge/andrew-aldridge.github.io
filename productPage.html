@@ -282,6 +282,7 @@ font-family:Montserrat,Roboto,sans-serif;
  });
            
 </script>   
+    
 <div class="container topEdge"> 
     
     <div class="title">
@@ -443,31 +444,34 @@ font-family:Montserrat,Roboto,sans-serif;
         width:100%;
         max-width:1200px;
         margin:40px 0 20px 0;
-        border:1px solid #ccc;
-        font-family:Roboto,Arial,sans-serif;
+        background:#ddd;
+        font-family:Open Sans,Roboto,Arial,sans-serif;
         font-size:14px;
         line-height:24px;
         position:relative;
+        border-radius:4px;
     }
     
     .deal2{
         display:table-cell;
         width:100%;
-        background:#fff;
+       
         padding:30px 20px 20px 20px ;
         
     }
     
     .deal2 h4{
-        font-size:20px;
+        font-family:Montserrat,Roboto,sans-serif;
+        font-weight:900;
+        font-size:18px;
         padding:0;
         margin:0 0 15px 0;
-        font-weight:700;
+    
         letter-spacing:-0.5px;
     }
     
     .deal2 strong{font-size:16px;color:red;font-weight:700;}
-
+    .terms{font-size:10px;color:#888;}
     
     .deal3,
     .deal1{
@@ -538,7 +542,9 @@ height:20px;
         background: #f2f2f2;
         font-weight:700;color:#444;
         }
-    .codeBox2 button{display:inline-block;height:40px;background:#42bb79;border: none;margin:0;font-weight:700;color:#fff;}
+    .codeBox2 button{display:inline-block;height:40px;background:#42bb79;border: none;margin:0;font-weight:700;color:#fff;padding:0px 20px;}
+    
+    
 
 </style>
 
@@ -616,7 +622,7 @@ height:20px;
 <div class="dealTag"><span>Hot Deal</span></div>    
  <div class="deal2">
 
-        <h4>Get £<span id="result5"></span> Off this bike Use Code : EXTRA10 </h4>
+        <h4>Get £<span id="result"></span> Off this bike Use Code : EXTRA10 </h4>
     <p>Get an extra 10% off any bike! Simply use code at the checkout.</p>   
  
 
@@ -632,7 +638,7 @@ height:20px;
                 </button>
             </div>
         </div>
-<h5>*applies to bikes only. Not available with Cyclescheme. Excludes Cube 2019 models. Cannot be used with any other offer. Offer ends 30/11/18.</h5>
+<span class="terms">*applies to bikes only. Not available with Cyclescheme. Excludes Cube 2019 models. Cannot be used with any other offer. Offer ends 30/11/18.</span>
 </div>
 
 
@@ -643,11 +649,11 @@ height:20px;
   
     
     
- var restaurant = document.getElementsByClassName('price-wrapper')[0];
-var ratings = restaurant.getAttribute("data-price-amount");   
+var priceScrape = document.getElementsByClassName('price-wrapper')[0];
+var price = priceScrape.getAttribute("data-price-amount");   
 var num22 = 0.1;
       
-        document.getElementById("result5").innerHTML = ((ratings * num22)  .toFixed(2));
+        document.getElementById("result").innerHTML = ((price * num22)  .toFixed(2));
 
   function myFunction() {
             var copyText = document.getElementById("myInput2");
@@ -696,16 +702,16 @@ var num22 = 0.1;
         
         
         
-     <h5>*Excludes Children's Bikes, Power Meters and Cyclescheme. Cannot be used with any other offer</h5>   
+     <span class="terms">*Excludes Children's Bikes, Power Meters and Cyclescheme. Cannot be used with any other offer</span>   
     </div>    
       <div class="deal3"> 
-      <a href="https://www.hargrovescycles.co.uk/components/pedals.html" target="_blank">View All Pedals</a>
+      <a href="" >View All Pedals</a>
     </div>
 </div>     
 
     
-    
-    
+    </div>    
+ 
     
 <!--SO footer-->
 <style>
