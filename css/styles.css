@@ -157,6 +157,7 @@ nav ul li a:hover {
 .btn-open:after {
 	color:#013243;
 	 font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content:"\f0c9";
 	transition-property:all .2s linear 0s;
 	-moz-transition:all .2s linear 0s;
@@ -208,7 +209,9 @@ nav ul li a:hover {
     position:absolute;
     color:#fff;
 	content:"\f00d";
-	font-family:"FontAwesome";}
+		 font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
 
 .overlay {
 	display:none;
