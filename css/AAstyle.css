@@ -409,7 +409,8 @@ box-shadow: 10px 10px 54px 0px rgba(179,179,179,0.55);
              vertical-align: middle;
              border-top:none;
         border-bottom:none;
-        border-right:none;     
+        border-right:none;   
+        background-position:center right;     
           }
          .headerRightInner{display:table-cell;width:100%;vertical-align: middle}
    
