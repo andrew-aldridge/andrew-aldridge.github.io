@@ -371,6 +371,22 @@ box-shadow: 10px 10px 54px 0px rgba(179,179,179,0.55);
         .p00402{
             border-left:none;
         } 
+               
+                .p0040{
+            padding:0px 20px;
+         
+        }
+        
+                .p00402{
+            padding:0px 20px;
+            border-left:none;
+        }         
+                 
+                .container{
+            max-width:1500px;
+            margin:auto;
+            padding:20px;
+        }         
          
    .headerleft, 
           
