@@ -370,12 +370,10 @@ box-shadow: 10px 10px 54px 0px rgba(179,179,179,0.55);
                  .footerCol{
                      text-align:center;
                  }
-        .p00402{
-            border-left:none;
-        } 
+
                
                 .p0040{
-            padding:0px 20px;
+            padding:0px 10px;
          
         }
         
@@ -388,7 +386,14 @@ box-shadow: 10px 10px 54px 0px rgba(179,179,179,0.55);
             max-width:1500px;
             margin:auto;
             padding:20px;
-        }         
+        }   
+                 
+                         .roundedBox{
+
+            padding:40px;
+
+          
+        }
          
    .headerleft, 
           
